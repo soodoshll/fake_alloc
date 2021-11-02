@@ -1,5 +1,6 @@
 #ifndef ALLOCATOR_H
 #define ALLOCATOR_H
+#include <cuda_runtime_api.h>
 
 namespace pytorch_malloc {
 
@@ -13,8 +14,8 @@ class Allocator {
     return allocator;
   }
 
-  void malloc(void **devPtr, size_t size);
-  void free(void *devPtr);
+  cudaError_t malloc(void **devPtr, size_t size);
+  cudaError_t free(void *devPtr);
 
  private:
   void *devPtr_ = nullptr;
