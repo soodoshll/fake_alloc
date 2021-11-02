@@ -1,5 +1,9 @@
 # Custom PyTorch Memory Management
 
+This is a external memory allocator example for [PyTorch](https://github.com/pytorch/pytorch). The underlying memory allocator is [CNMeM](https://github.com/NVIDIA/cnmem).
+
+## Usage
+
 Compile with `nvcc`:
 
 ```bash
@@ -17,7 +21,7 @@ To make pytorch allocate without the inherit caching mechanism, run with `PYTORC
 LD_PRELOAD=./libcudart.so PYTORCH_NO_CUDA_MEMORY_CACHING=1 python3 your_model.py
 ```
 
-## profile
+## Profile
 
 Use the `profiler` branch to profile the memory usage of your model:
 
