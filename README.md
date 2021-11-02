@@ -1,6 +1,6 @@
 # Custom PyTorch Memory Management
 
-This is a external memory allocator example for [PyTorch](https://github.com/pytorch/pytorch). The underlying memory allocator is [CNMeM](https://github.com/NVIDIA/cnmem).
+This is an external memory allocator example for [PyTorch](https://github.com/pytorch/pytorch). The underlying memory allocator is [CNMeM](https://github.com/NVIDIA/cnmem).
 
 ## Usage
 
